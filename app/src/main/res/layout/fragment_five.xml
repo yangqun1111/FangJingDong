@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F0F2F5"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_weight="0.09">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/b5b" />
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/five_imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="30dp"
+            android:background="@mipmap/yhtx"
+            fresco:placeholderImage="@mipmap/yhtx"
+            fresco:roundAsCircle="true"/>
+
+        <TextView
+            android:id="@+id/five_btn_dl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/five_imageView"
+            android:layout_marginLeft="23dp"
+            android:layout_marginStart="23dp"
+            android:layout_toEndOf="@+id/five_imageView"
+            android:layout_toRightOf="@+id/five_imageView"
+            android:text="登录/注册"
+            android:textColor="#f0f"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/five_imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="12dp"
+            android:background="@mipmap/q" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/five_imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:background="@mipmap/fa"
+        />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/gz"
+            android:text="商品关注"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/hd"
+            android:text="店铺关注"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@mipmap/kh"
+            android:gravity="center"
+            android:text="内容收藏" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/lljl"
+            android:text="浏览记录"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/mydd"
+            android:text="我的活动"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/myqb"
+            android:text="社区"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:drawableTop="@mipmap/shqz"
+            android:text="客户服务"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+</LinearLayout>
